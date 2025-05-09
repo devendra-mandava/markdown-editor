@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.editor, .preview {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  overflow: auto;
+}
+
+.editor {
+  resize: none;
+}
+
+.rendered {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
